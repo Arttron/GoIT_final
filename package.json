@@ -1,0 +1,26 @@
+{
+  "name": "final_test",
+  "version": "1.0.0",
+  "description": "GoIT Final test 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Arttron/GoIT_final.git"
+  },
+  "author": "Romanov Artem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arttron/GoIT_final/issues"
+  },
+  "homepage": "https://github.com/Arttron/GoIT_final#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rm": "^1.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
