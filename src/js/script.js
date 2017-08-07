@@ -5,4 +5,6 @@
         }
     }
     var p = new Parent;
+    var a = new Parent;
+    var b = new Parent;
 }());

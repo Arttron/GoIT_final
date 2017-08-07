@@ -32,7 +32,10 @@ gulp.task('bs-reload',['bundleHtml','sass','bundleJs'], function (done) {
 
 gulp.task('sass', function () {
     return gulp.src('./src/sass/*.scss')
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'expanded',
+            includePaths: ['node_modules/susy/sass']
+        })
+            .on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false

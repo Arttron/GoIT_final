@@ -1,0 +1,41 @@
+@import 'var.scss';
+@import "susy";
+
+@media (max-width: 320px) {
+   header{
+      height: 540px;
+      display: flex;
+      flex-direction: column;
+      background: url("../img/promo.jpg") center no-repeat;
+      background-size: cover;
+      position: relative;
+      &::before{
+         content: "";
+         position: absolute;
+         display: block;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(0, 0, 0, .2);
+      }
+      .login {
+         display: flex;
+         width: 100%;
+         flex-direction: row;
+         justify-content: center;
+         z-index: 1;
+         &__link {
+            font-size: .75rem;
+            $login__link_h: 20px;
+            height: $login__link_h;
+            border: 2px solid transparent;
+            border-radius: $login__link_h;
+            margin-top: 20px;
+            padding: 5px 15px;
+            &:hover{
+            border: 2px solid #fff;
+
+            }
+         }
+      }
+   }
+}
