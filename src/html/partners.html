@@ -1,0 +1,16 @@
+<script type="text/template" id="PartnersTemplate">
+    <% _.forEach(partners, function(name) {%>
+            <div class="partner__partners-item">
+            <div class="partner__partners__img-con">
+                <img class="partner__partners__avatar" src="<%- name.avatar %>" alt=""/>
+                <div class="partner__partners__pic" style="background-color: <%- name.color %>">
+                    <svg class="partner__partners__pic-svg">
+                        <use xlink:href="img/svg/symbols.svg<%- name.pic %>"></use>
+                    </svg>
+                </div>
+            </div>
+            <p class="partner__partners__name"><%- name.firstName %> <%- name.lastName %></p>
+                <p class="partner__partners__comment"><%- name.comment %></p>
+            </div>
+    <% }); %>
+</script>

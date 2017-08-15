@@ -1,0 +1,37 @@
+{
+	"partners" : [
+		{
+			"firstName" : "Bradley",
+			"lastName" : "Hunter",
+			"avatar" : "img/brh.jpg",
+			"pic" : "#television",
+			"comment" : "Based in Chicago. I love playing tennis and loud music.",
+			"color" : "#FF4E50"
+		},
+		{
+			"firstName" : "Lucas",
+			"lastName" : "Marsha",
+			"avatar" : "img/lmr.jpg",
+			"pic" : "#flask",
+			"comment" : "I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.",
+			"color" : "#1CD7AD"
+		},
+		{
+			"firstName" : "Heather",
+			"lastName" : "Walker",
+			"avatar" : "img/hwl.jpg",
+			"pic" : "#coffee",
+			"comment" : "I'm a happy person that loves cats and climbing on mountains.",
+			"color" : "#FFA507"
+		},
+		{
+			"firstName" : "Bradley",
+			"lastName" : "Hunter",
+			"avatar" : "img/brh-w.jpg",
+			"pic" : "#flying-origami-airplane",
+			"comment" : "Based in Chicago. I love playing tennis and loud music.",
+			"color" : "#4E73DB"
+		}
+		]
+}
+//https://api.myjson.com/bins/1empk9

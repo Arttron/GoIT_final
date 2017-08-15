@@ -28,7 +28,9 @@
     "gulp-rigger": "^0.5.8",
     "gulp-rm": "^1.0.4",
     "gulp-sass": "^3.1.0",
+    "gulp-svg-sprites": "^4.1.2",
     "gulp-watch": "^4.3.11",
     "susy": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,19 @@
+<script type="text/template" id="IdeasTemplate">
+    <%
+    var i=0;
+    _.forEach(hits, function(name) {%>
+    <% if (i == 0){%>
+        <div class="grid-item" >
+    <%} else if(i == 3 || i==6){%>
+        <div class="grid-item grid-item--width2" >
+    <%} else {%>
+        <div class="grid-item" >
+    <% }
+     i++; %>
+        <img class="ideas__img" src="<%- name.webformatURL %>" alt=""/>
+        <p class="ideas__comment"><%- name.tags %></p>
+    </div>
+    <% }); %>
+    <div class="grid-sizer"></div>
+    <div class="grid-gutter"></div>
+</script>

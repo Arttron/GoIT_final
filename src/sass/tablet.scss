@@ -1,4 +1,194 @@
 //Tablet
-@media (min-width: 600px) {
+@import "susy";
+@media (min-width: 760px) {
+   header{
+      width: span(12);
+      height: 700px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      position: relative;
+      &::before{
+         content: "";
+         position: absolute;
+         display: block;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(0, 0, 0, .2);
+      }
+      .login {
+         width: span(3);
+         float: right;
+         margin-top: 30px;
+         &__link{
+            font-size: .875rem;
+         }
+      }
+      .promo{
+         flex: 3 2 100%;
+         &__head{
+            margin-top: 30px;
+            width: span(4);
+            flex-basis: 50%;
+            align-self: flex-start;
+            order: -1;
+            line-height: 34px;
+            &:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+         }
+         }
+         &__tag{
+            margin-top: 157px;
+            width: span(8);
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 3.25rem;
+         }
+         &__text{
+            font-size: 1.5rem;
+            margin-top: 35px;
+         }
+         &__find-link{
+            margin-top: 30px;
+            width: span(4);
+         }
+      }
+   }
+   main{
+      width: span(12);
+      section{
+         width: span(12);
+      }
+      .js_slider, .js_slider-one, .js_slider-two {
+         width: 25%;
+         max-width: 300px;
+         margin-left: gutter(12);
+         margin-right: gutter(12);
+         li {
+            height: 390px;
+         }
+      }
+      .step{
+         margin-top: 95px;
+         &__head{
+            margin-bottom: 35px;
+         }
+         &__sliders{
+            .js_slider, .js_slider-one, .js_slider-two {
+               width: 220px;
+               margin: 0 gutter(24);
+               .js_slider-text{
+                  max-width: 195px;
+                  &__head{
+                     margin-top: 15px;
+                  }
+                  &__desc{
+                     margin-top: 10px;
+                  }
+               }
+            }
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: span(12);
+         }
+      }
+      .partner{
+         margin-top: 100px;
+         &__header{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 22px;
+         }
+         &__partners{
+            //height: 940px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: span(1);
+            margin-right: span(1);
+            width: span(10);
+            &-item{
+               width: span(6);
+            }
+         }
+         .link-button{
+         width: span(3);
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+      }
+      .ideas{
+         margin-top: 100px;
+         &__head{
+            margin-bottom: 30px;
+         }
+         .grid{
+            width: 95%;
+            margin: 0 auto;
+         }
+      }
+      .search{
+         margin-bottom: 97px;
+         &__head{
+            text-align: center;
+            font-size: 22px;
+         }
+         &__form{
+            display: flex;
+            flex-direction: row;
+            width: span(6);
+            margin-left: span(3);
+            align-items: center;
+            justify-content: center;
+            margin-top: 35px;
+         }
+         &__input{
+            margin: 0;
+            width: 235px;
+         }
+         .link-button{
+            width: 160px;
+            margin-left: 10px;
+         }
+      }
+   }
+   .foo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-bottom: 35px;
+      margin-top: 40px;
+      padding-top: 37px;
+      &__header {
+         margin-left: 30px;
+      }
+      nav{
+         margin: 0 0 0 0px;
+      }
+      &__nav{
+         display: block;
+         text-align: left;
+      }
+      .nav__head{
+         margin-bottom: 15px;
+      }
+      .nav__item{
+         display: block;
+         text-align: left;
+      }
+      &__copy{
+         justify-content: flex-start;
+      }
+   }
 
+   .nav__item{
+      display: inline-block;
+   }
 }

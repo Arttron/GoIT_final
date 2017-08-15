@@ -1,1 +1,8 @@
+@import "susy";
+$susy: (  'columns': susy-repeat(12),
+            'gutters': 0.5,
+            'spread': 'narrow',
+            'container-spread': 'narrow',);
+
 $bg-color: grey;
+$steps-color: #ff4e50;

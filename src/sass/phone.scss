@@ -1,41 +1,121 @@
-@import 'var.scss';
 @import "susy";
 
-@media (max-width: 320px) {
+@media (max-width: 760px) {
    header{
       height: 540px;
       display: flex;
       flex-direction: column;
-      background: url("../img/promo.jpg") center no-repeat;
-      background-size: cover;
-      position: relative;
-      &::before{
-         content: "";
-         position: absolute;
-         display: block;
-         height: 100%;
-         width: 100%;
-         background-color: rgba(0, 0, 0, .2);
-      }
+      justify-content: flex-start;
+      flex-wrap: wrap;
       .login {
-         display: flex;
-         width: 100%;
-         flex-direction: row;
-         justify-content: center;
-         z-index: 1;
+         margin-top: 20px;
          &__link {
-            font-size: .75rem;
-            $login__link_h: 20px;
-            height: $login__link_h;
-            border: 2px solid transparent;
-            border-radius: $login__link_h;
-            margin-top: 20px;
-            padding: 5px 15px;
-            &:hover{
-            border: 2px solid #fff;
+         }
+      }
+      .promo{
+         &__head{
+            margin-top: 110px;
+         }
+         &__tag{
+            margin-top: 35px;
 
+         }
+         &__text{
+            margin: 20px auto 0;
+            width: 70%;
+         }
+      }
+      .link-button{
+         margin-top: 20px;
+      }
+   }
+   main{
+      width: span(12);
+      margin-top: 37px;
+      section{
+         width: span(12);
+      }
+      .step{
+
+         &__sliders{
+            position: relative;
+         }
+      }
+      .partner{
+         &__header{
+            text-align: center;
+            font-size: 22px;
+         }
+         &__partners{
+            //height: 940px;
+         }
+      }
+      .js_slider, .js_slider-one, .js_slider-two {
+         width: 95%;
+         li{
+            height: 240px;
+            img{
+               margin-top: -35px ;
+               margin-left: -160px;
+               height: 160%;
+            }
+         }
+         .prev, .next {
+            display: none;
+         }
+      }
+      .ideas{
+         margin-top: 40px;
+         .grid{
+            width: 95%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            .grid-item{
+               float: none;
+               display: block;
+               height: 120px;
+               img{
+               }
+            }
+            .grid-sizer,
+            .grid-item {
+               width: 100%;
+            }
+            .grid-item--width2 {
+               width: 100%;
             }
          }
       }
+      .search{
+         &__head{
+            text-align: center;
+            font-size: 22px;
+         }
+      }
    }
+   footer{
+      margin-top: 30px;
+   }
+      .foo {
+         padding-bottom: 20px;
+         margin-top: 40px;
+         &__header {
+            text-align: center;
+            margin: 16px auto 20px ;
+         }
+         &__nav{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+         }
+         &__copy-text{
+            margin: 15px auto 5px;
+         }
+      }
+      .nav__head{
+         text-align: center;
+      }
+      .nav__item{
+         display: inline-block;
+      }
 }
